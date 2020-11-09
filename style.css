@@ -205,4 +205,8 @@ body {
     margin-left: 5%;
     margin-right: 6%;
   }
+
+  #footer a{
+      font-size: 1rem;
+  }
 }
