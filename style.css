@@ -130,6 +130,10 @@ body {
   font-size: 1.2rem;
 }
 
+#timeline li{
+  margin-bottom: 1.2em;
+}
+
 /* footer */
 #footer {
   display: flex;
