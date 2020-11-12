@@ -30,7 +30,7 @@ body {
     ". title ."
     ". image ."
     ". tribute ."
-    ". footer .";
+    ". footer github";
 }
 
 /* title */
@@ -40,6 +40,7 @@ body {
   display: flex;
   justify-content: center;
   grid-area: title;
+  grid-column: 1/-1;
   padding: 20px 0px 20px 0px;
   text-shadow: -1px -1px 0.3px black ;
 }
@@ -53,6 +54,8 @@ body {
   padding-top: 30px;
   background-color: #202020;
   grid-area: image;
+  grid-column: 1/-1;
+
 }
 
 #image {
@@ -79,7 +82,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  grid-column: 2/3;
+  grid-column: 1/-1;
   grid-row: 3/3;
   order: 10;
 }
@@ -88,6 +91,7 @@ body {
 
 .tribute-background {
   grid-area: tribute;
+  grid-column: 1/-1;
   max-width: 100%;
   background-color: #aa8500;
 }
@@ -96,6 +100,7 @@ body {
   margin: 80px 20vw;
   color: var(--FontColor);
   grid-area: tribute;
+  grid-column: 1/-1;
 }
 
 #tribute-info h2 {
@@ -141,6 +146,7 @@ body {
   box-sizing: border-box;
   background-color: #707070;
   grid-area: footer;
+  grid-column: 1/-1;
   width: 100%;
   height: auto;
   padding: 25px;
@@ -155,6 +161,30 @@ body {
   background: lavender;
   padding: 5px 20px;
   border-radius: 20px;
+}
+
+.github-ico{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: github;
+  grid-column: 1/-1;
+  font-size: 1.5em;
+  margin-right: 2.5%;
+  color: rgb(0, 57, 163);
+}
+
+.github-ico > span{
+  font-size: 2rem;
+  margin-left: 5px;
+}
+
+.github-ico a{
+  text-decoration: none;
+}
+
+.github-ico a:visited{
+  color: rgb(0, 57, 163);
 }
 
 #footer a:hover {
@@ -211,6 +241,6 @@ body {
   }
 
   #footer a{
-    font-size: 1rem;
+      font-size: 1rem;
   }
 }
